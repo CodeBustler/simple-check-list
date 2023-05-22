@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  color: #42606d;
+}
+
+/* Body Styling */
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+/* Frame Styling */
+.frame {
+  width: 400px;
+  height: 400px;
+  background: rgb(253, 165, 49);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 165, 49, 1) 24%,
+    rgba(253, 200, 49, 1) 100%
+  );
+  border-radius: 5px;
+  box-shadow: 5px 10px 20px rgba(128, 128, 128, 0.473);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* White Container */
+.container {
+  width: 60%;
+  height: 70%;
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 5px 10px 20px rgba(128, 128, 128, 0.473);
+  padding: 25px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-width: 260px;
+}
+
+/* Day Box */
+.day-box {
+  text-align: center;
+  border-bottom: 1px solid #42606d3b;
+  padding-bottom: 20px;
+}
+
+.day-box #day {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.day-box #date {
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 3px;
+}
+
+/* Tasks Styling */
+.tasks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 20px 0;
+  text-transform: lowercase;
+  flex-direction: row-reverse;
+}
+
+:first-letter {
+  text-transform: uppercase;
+}
+
+label {
+  width: calc(100% - 15px);
+  transition: 1s;
+}
+
+/* Check Box Styling */
+input:checked ~ label {
+  text-decoration: line-through;
+  opacity: 0.5;
+  font-style: italic;
+  transition: 1s;
+}
+
+input[type='checkbox'] {
+  width: 15px;
+  height: 15px;
+  accent-color: orange;
+  transition: 1s;
+}
