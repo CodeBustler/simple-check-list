@@ -29,7 +29,7 @@ let days = [
 let year = date.getFullYear();
 let month = date.getMonth();
 let cDate = date.getDate();
-let day = date.getDay();
+let day = date.getDay() - 1;
 
 let currentDate = `${cDate} - ${months[month]} - ${year}`;
 
